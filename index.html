@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary1: '#ffffff',
+            primary2: '#000000',
+            blueshade: '#007FFF',
+            grayshade1:' #e5e7eb',
+            grayshade2: '#9ca3af',
+            grayshade: '#C0C0C0',
+            
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="h-screen w-screen flex items-center justify-center">
+    <section class="w-[80vw] h-[100vh] bg-gray-100 rounded-3xl">
+        <!-- navigation bar -->
+        <nav class="grid grid-cols-12 h-[10%] border bg-primary1 py-2 rounded-t-2xl">
+          <!-- logo -->
+            <div class="col-span-2 flex items-center pl-5 gap-3 ">
+              <img src="./icons/bank-bitcoin-cryptocurrency-5-svgrepo-com.svg" alt="" width="30px">
+              <h1 class="font-medium text-2xl capitalize">banksin</h1>
+            </div>
+            <!-- search -->
+            <div class=" border-l border-r col-span-8 flex justify-between">
+              <div class="pl-3 w-[45%]">
+                <h1 class="flex gap-2 font-medium capitalize ">hey johnson <img src="./icons/waving-hand-svgrepo-com.svg" alt="" width="20px"></h1>
+                <p class="text-[12px] text-grayshade">Welcome to your transaction partner</p>
+              </div>
+
+              <div class="flex items-center space-x-3 w-[55%]">
+
+                <div class="bg-grayshade1 flex h-[2rem] pl-3 focus-within:border focus-within:border-blueshade rounded-md w-[75%]">
+                  <img src="./icons/search-alt-svgrepo-com.svg" alt="" width="20px" >
+                <input  type="text" placeholder="Search" class="focus:outline-none  bg-grayshade1" >
+                </div>
+
+                <div class="flex space-x-3">
+                  <img src="./icons/message-closed-envelope-svgrepo-com.svg" alt="" width="20px">
+                  <img src="./icons/bell-pin-svgrepo-com.svg" alt="" width="20px">       
+                </div>
+              </div>
+              
+            </div>
+            <!-- user -->
+            <div class="pl-3 col-span-2 space-x-2 flex">
+              <img src="./img/woman1.jpg" alt="" class="w-[30px] h-[30px] rounded-[50%]">
+              <div>
+                <h1 class="capitalize font-medium text-[14px]">johnson mick</h1>
+                <p class="capitalize text-[12px] text-grayshade">developer</p>
+              </div>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <div class="grid grid-cols-12 h-[90%] border rounded-2xl">
+            <!-- left side bar -->
+            <div class="col-span-2 bg-primary1 p-4 flex flex-col justify-between  rounded-bl-3xl">
+              <div>
+                <div class="mb-4">
+                  <h1 class="capitalize">main menu</h1>
+                  <div class="mt-3">
+                    <div class="flex space-x-2 mb-2">
+                      <img src="./icons/menu-navigation-grid-1529-svgrepo-com.svg" alt="" width="20px">
+                      <span class="capitalize text-blueshade text-sm">dashboard</span>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                      <div class="flex space-x-2">
+                        <img src="./icons/analytics-graph-chart-svgrepo-com.svg" alt="" width="19px">
+                        <span class="capitalize text-grayshade2 text-sm ">analytics</span></div>
+                      <img src="./icons/arrow-down-svgrepo-com.svg" alt="" width="20px">
+                    </div>
+
+                    <div class="flex justify-between mb-2">
+                      <div class="flex space-x-2">
+                        <img src="./icons/analytics-line-svgrepo-com.svg" alt="" width="19px">
+                        <span class="capitalize text-grayshade2 text-sm ">transactions</span></div>
+                      <img src="./icons/arrow-down-svgrepo-com.svg" alt="" width="20px">
+                    </div>
+
+                    <div class="flex space-x-2 mb-2">
+                      <img src="./icons/document-with-folded-corner-svgrepo-com.svg" alt="" width="19px">
+                      <span class="capitalize text-grayshade2 text-sm ">documents</span></div>
+
+                      <div class="flex space-x-2 mb-2">
+                        <img src="./icons/dollar-minimalistic-svgrepo-com.svg" alt="" width="19px">
+                        <span class="capitalize text-grayshade2 text-sm ">operations</span></div>
+
+                        <div class="flex justify-between mb-2">
+                          <div class="flex space-x-2">
+                            <img src="./icons/three-circles-overlapping-at-the-center-svgrepo-com.svg" alt="" width="19px">
+                            <span class="capitalize text-grayshade2 text-sm ">update</span></div>
+                          <span class="h-[20px] w-[25px] bg-red-500 rounded-md flex items-center justify-center text-primary1">4</span>
+                        </div>
+
+                  </div>
+                </div>
+
+                <div>
+                  <h1 class="capitalize">account</h1>
+
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <div class="flex space-x-2">
+                        <img src="./icons/shop-svgrepo-com.svg" alt="" width="19px">
+                        <span class="capitalize text-grayshade2 text-sm ">update</span></div>
+                      <img src="./icons//arrow-up-svgrepo-com.svg" alt="" width="20px">
+                    </div>
+                    <div class="ml-6 flex flex-col">
+                      <span class="capitalize text-grayshade2 text-sm ">balance</span>
+
+                      <span class="capitalize text-grayshade2 text-sm ">spending</span>
+
+                      <span class="capitalize text-grayshade2 text-sm ">refund</span>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex space-x-2 mb-2">
+                  <img src="./icons/setting-svgrepo-com.svg" alt="" width="19px">
+                  <span class="capitalize text-grayshade2 text-sm ">settings</span></div>
+
+                  <div class="flex space-x-2 mb-2">
+                    <img src="./icons/help-svgrepo-com.svg" alt="" width="19px">
+                    <span class="capitalize text-grayshade2 text-sm ">get help</span></div>
+
+                    <div class="flex space-x-2 mb-2">
+                      <img src="./icons/logout-2-svgrepo-com.svg" alt="" width="19px">
+                      <span class="capitalize text-grayshade2 text-sm text-red-500 ">log out</span></div>
+              </div>
+            </div>
+            <!-- middle side bar -->
+            <div class="col-span-7 b mt-2 mx-3 grid">
+              <!-- balance -->
+              <div>
+                <h1 class="font-medium text-xl">Your total balance</h1>
+                <p class="text-sm text-grayshade2">Take a look at your stastistics</p>
+              </div>
+              <!-- show money -->
+              <div class="flex justify-between my-2">
+                <div>
+                  <h1 class="font-medium text-4xl">$467,635</h1>
+                  <div class="flex space-x-2">
+                    <img src="./icons/arrow-up-right-svgrepo-com.svg" alt="" width="10px">
+                  <p class="font-medium text-green-500 text-[10px]">
+                    $2,330.00 {+2.5%}
+                  </p>
+                  </div>
+                </div>
+                <div>
+                  <img src="./icons/wallet-1-svgrepo-com.svg" alt="" width="20px">
+                  <p class="font-medium">$324,435</p>
+                  <p class="text-sm text-grayshade2">Income from investments</p>
+                </div>
+                <div>
+                  <img src="./icons/wallet-check-svgrepo-com.svg" alt="" width="20px">
+                  <p class="font-medium">$143,200</p>
+                  <p class="text-sm text-grayshade2">Income from accounts</p>
+                </div>
+              </div>
+              <!-- Graph -->
+              <div class="bg-primary1 mb-2">
+                <canvas id="myChart"></canvas>
+              </div>
+              <!-- icome/expense -->
+              <div class="grid grid-cols-4 gap-3">
+                <div class="bg-primary1 rounded-xl flex flex-col justify-between h-[115px] p-3">
+                  <div class="flex justify-between">
+                    <img src="./icons/wallet-add-1-svgrepo-com.svg" alt="" width="20px">
+                    <img src="./icons/three-dots-vertical-svgrepo-com.svg" alt="" width="20px">
+                  </div>
+                  <div>
+                    <h1 class="font-medium text-xl">$342,394</h1>
+                    <p class="text-grayshade2 text-[10px]">income</p>
+                  </div>
+                  <!-- small graph here -->
+                   <div>
+                    <img src="./img/Untitled design.png" alt="" class="w-full h-[20px]">
+                   </div>
+
+                </div>
+
+                <div class="bg-primary1 rounded-xl flex flex-col justify-between h-[115px] p-3">
+                  <div class="flex justify-between">
+                    <img src="./icons/wallet-add-1-svgrepo-com.svg" alt="" width="20px">
+                    <img src="./icons/three-dots-vertical-svgrepo-com.svg" alt="" width="20px">
+                  </div>
+                  <div>
+                    <h1 class="font-medium text-xl">$342,394</h1>
+                    <p class="text-grayshade2 text-[10px]">expend</p>
+                  </div>
+                  <!-- small graph here -->
+                  <div>
+                    <img src="./img/Untitled design1.png" alt="" class="w-full h-[50%]">
+                   </div>
+
+                </div>
+
+                   <div class="bg-primary1  rounded-xl flex flex-col justify-between h-[115px] p-3">
+                  <div class="flex justify-between">
+                    <img src="./icons/wallet-add-1-svgrepo-com.svg" alt="" width="20px">
+                    <img src="./icons/three-dots-vertical-svgrepo-com.svg" alt="" width="20px">
+                  </div>
+                  <div>
+                    <h1 class="font-medium text-xl">$342,394</h1>
+                    <p class="text-grayshade2 text-[10px]">saving</p>
+                  </div>
+                  <!-- small graph here -->
+                  <div>
+                    <img src="./img/Untitled design.png" alt="" class="w-full h-[50%]">
+                   </div>
+
+                </div>
+
+                   <div class="bg-primary1   rounded-xl flex flex-col justify-between h-[115px] p-3">
+                  <div class="flex justify-between">
+                    <img src="./icons/wallet-add-1-svgrepo-com.svg" alt="" width="20px">
+                    <img src="./icons/three-dots-vertical-svgrepo-com.svg" alt="" width="20px">
+                  </div>
+                  <div>
+                    <h1 class="font-medium text-xl">$342,394</h1>
+                    <p class="text-grayshade2 text-[10px]">investment</p>
+                  </div>
+                  <!-- small graph here -->
+                  <div>
+                    <img src="./img/Untitled design1.png" alt="" class="w-full h-[50%]">
+                   </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- right side bar  -->
+            <div class="col-span-3 bg-primary1 px-4 py-2 rounded-br-3xl">
+
+              <div class="flex justify-between mb-2">
+                <h1>wallet</h1>
+                <img src="./icons/three-dots-svgrepo-com.svg" alt="" width="20px">
+              </div>
+<!-- visa -->
+              <div class="bg-blueshade rounded-xl w-full h-[27%] flex flex-col justify-between p-3">
+                <div class="flex space-x-2 ">
+                  <img src="./icons/polygonal-ornament-of-small-triangles-in-star-and-hexagon-shapes-svgrepo-com.svg" alt="" width="20px">
+                  <h1>wallet</h1>
+                </div>
+                <p class="text-lg text-primary1">5022 3386 9820 1246</p>
+
+                <div class="flex justify-between items-center">
+                  <div>
+                    <p class="uppercase text-primary1 font-medium text-[5px]">card holder</p>
+                    <p class="uppercase text-primary1 font-medium text-[7px]">cristine silvi</p>
+                  </div>
+                  <div>
+                    <p class="uppercase text-primary1 font-medium text-[5px]">card holder</p>
+                    <p class="uppercase text-primary1 font-medium text-[7px]">cristine silvi</p>
+                  </div>
+                  <img src="./icons/visa-svgrepo-com.svg" alt="" width="40px">
+
+                </div>
+              </div>
+              <!-- details -->
+              <div class="
+              mt-2 flex items-center justify-center space-x-1">
+                <p class="bg-black h-[4px] w-[25px] rounded-xl"></p>
+                <p class="bg-grayshade1 h-[4px] w-[15px] rounded-xl"></p>
+                <p class="bg-grayshade1 h-[4px] w-[10px] rounded-xl"></p>
+              </div>
+
+<!-- icons -->
+<div class="mt-3 flex justify-between">
+  <div>
+    <img src="./icons/wallet-send-svgrepo-com.svg" alt="" width="30px"  class="p-1 border bg-grayshade1 rounded-md ">
+    <p class="mt-1 capitalize text-grayshade2 text-[12px]">send</p>
+  </div>
+  <div>
+    <img src="./icons/wallet-receive-svgrepo-com.svg" alt="" width="30px"  class="p-1 border bg-grayshade1 rounded-md ">
+    <p class="mt-1 capitalize text-grayshade2 text-[12px]">request</p>
+  </div>
+  <div>
+    <img src="./icons/bitcoin-card-svgrepo-com.svg" alt="" width="30px"  class="p-1 border bg-grayshade1 rounded-md ">
+    <p class="mt-1 capitalize text-grayshade2 text-[12px]">crypto</p>
+  </div>
+  <div>
+    <img src="./icons/menu-navigation-grid-1529-svgrepo-com (1).svg" alt="" width="30px"  class="p-1 border bg-grayshade1 rounded-md ">
+    <p class="mt-1 capitalize text-grayshade2 text-[12px]">more</p>
+  </div>
+</div>
+<!-- transaction  -->
+<div class="text-sm my-2 flex justify-between">
+  <h1>Recent Tranaction</h1>
+  <img src="./icons/three-dots-vertical-svgrepo-com.svg" alt="" width="20px">
+</div>
+<!-- search -->
+
+<div class="flex justify-between  ">
+  <div class="bg-grayshade1 flex h-[1.7rem] pl-2 focus-within:border focus-within:border-blueshade rounded-md w-[80%]">
+    <img src="./icons/search-alt-svgrepo-com.svg" alt="" width="20px" >
+    <input  type="text" placeholder="Search" class="focus:outline-none  bg-grayshade1  w-[80%]" >
+  </div>
+  <img src="./icons/calender-svgrepo-com.svg" alt="" width="20px" class="w-[12%] p-[6px]  bg-grayshade1 rounded-md ">
+</div>
+
+<!-- companies -->
+ <div class="mt-1">
+
+  <div class="flex justify-between items-center mt-3">
+    <div class="flex items-center space-x-4">
+    <img src="./icons/facebook-color-svgrepo-com.svg" width="30px" alt="" class="p-2 border bg-grayshade1 rounded-md ">
+    <div>
+    <h1 class="capitalize text-sm">facebook charge</h1>
+    <p class="text-grayshade2 text-[10px]">24 Sep 2022</p>
+  </div>
+  </div>
+
+  <div>
+    <h1 class="font-medium text-[13px]">-$5,332</h1>
+    <p class="text-grayshade2 text-[10px]">21.43pm</p>
+  </div>
+</div>
+
+  <div class="flex justify-between items-center mt-2">
+    <div class="flex items-center space-x-4"> 
+      <img src="./icons/shopee-svgrepo-com.svg" width="30px" alt="" class="p-2 border bg-grayshade1 rounded-md ">
+      <div>
+      <h1 class="capitalize text-sm">shopee payment</h1>
+      <p class="text-grayshade2 text-[10px]">22 Sep 2022</p>
+    </div>
+    </div>
+
+    <div>
+      <h1 class="font-medium text-[13px]">-$4.382</h1>
+      <p class="text-grayshade2 text-[10px]">11.12pm</p>
+    </div>
+  </div>
+
+  <div class="flex justify-between items-center mt-2">
+    <div class="flex items-center space-x-4">
+    <img src="./icons/dribble-network-communication-internet-interaction-svgrepo-com.svg" width="30px" alt="" class="p-2 border bg-grayshade1 rounded-md ">
+    <div>
+    <h1 class="capitalize text-sm">dribble payment</h1>
+    <p class="text-grayshade2 text-[10px]">22 Sep 2022</p>
+  </div>
+  </div>
+
+  <div>
+    <h1 class="font-medium text-[13px]">-$80.329</h1>
+    <p class="text-grayshade2 text-[10px]">14.22pm</p>
+  </div>
+</div>
+
+<div class="flex justify-between items-center mt-2"> 
+  <div class="flex items-center space-x-4">   
+  <img src="./icons/tiktok-svgrepo-com.svg" width="30px" alt="" class="p-2 border bg-grayshade1 rounded-md ">
+  <div>
+  <h1 class="capitalize text-sm">tikTok sponsored</h1>
+  <p class="text-grayshade2 text-[10px]">15 Sep 2022</p>
+</div>
+</div>
+
+<div>
+  <h1 class="font-medium text-[13px]">-$92.840</h1>
+  <p class="text-grayshade2 text-[10px]">19.39pm</p>
+</div>
+</div>
+
+<div class="flex justify-between items-center mt-2 ">
+  <div class="flex items-center space-x-4">
+
+  <img src="./icons/bukalapak-svgrepo-com.svg" width="30px" alt="" class="p-2 border bg-grayshade1 rounded-md ">
+  <div>
+  <h1 class="capitalize text-sm">bulkalapak</h1>
+  <p class="text-grayshade2 text-[10px]">16 Sep 2022</p>
+</div>
+</div>
+
+<div>
+  <h1 class="font-medium text-[13px]">-$4.372</h1>
+  <p class="text-grayshade2 text-[10px]">12.36pm</p>
+</div>
+</div>
+
+ </div>
+</div>
+
+
+
+
+ 
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
